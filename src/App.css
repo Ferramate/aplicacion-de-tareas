@@ -17,7 +17,8 @@
 }
 
 /* Título */
-.aplicacion-tareas h1, .aplicacion-tareas p {
+.aplicacion-tareas h1,
+.aplicacion-tareas p {
   text-align: center;
   color: #333;
   margin-bottom: 20px;
@@ -78,6 +79,7 @@
   cursor: pointer;
   transition: all 0.2s;
   font-weight: 500;
+  background-color: #45a049;
 }
 
 .editar-tarea {
@@ -141,9 +143,28 @@ form {
   width: 100%;
   max-width: 400px;
   padding: 10px;
-  border-radius: 8px; 
+  border-radius: 8px;
   border: 1px solid #ccc;
-  font-size: 16px; 
+  font-size: 16px;
+}
+
+button {
+  background: #45a049;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  width: 100%;
+  max-width: 150px;
+}
+
+button:hover {
+  background: #4caf50;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 /* Mensaje de no tareas */
@@ -153,6 +174,7 @@ form {
   font-style: italic;
   margin-top: 20px;
 }
+
 /* Estilos responsivos */
 @media (max-width: 678px) {
   .aplicacion-tareas {
@@ -166,6 +188,10 @@ form {
   }
 
   .nueva-tarea-input {
+    font-size: 14px;
+  }
+  .nueva-tarea-boton {
+    padding: 8px 12px;
     font-size: 14px;
   }
 }
