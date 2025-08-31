@@ -1,0 +1,171 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+.aplicacion-tareas {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.aplicacion-tareas h1, .aplicacion-tareas p {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+/* Logo */
+.aplicacion-tareas img {
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+  width: 120px;
+}
+
+/* Lista de tareas */
+.tareas-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Cada tarea */
+.tarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2f2f22;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s;
+}
+
+.tarea:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Input de tarea */
+.tarea input[type="text"] {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  width: 200px;
+}
+
+.tarea input[type="text"]:read-only {
+  color: white;
+}
+
+/* Botones de acciones */
+.tarea button {
+  margin-left: 6px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.editar-tarea {
+  background: #4caf50;
+  color: rgb(27, 24, 24);
+}
+
+.editar-tarea:hover {
+  background: #45a049;
+}
+
+.eliminar-tarea {
+  background: #f44336;
+  color: white;
+}
+
+.eliminar-tarea:hover {
+  background: #e53935;
+}
+
+/* Formulario nueva tarea */
+form {
+  display: flex;
+  gap: 10px;
+}
+
+.nueva-tarea-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.nueva-tarea-boton {
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.nueva-tarea-boton:hover {
+  background: #1e88e5;
+}
+
+.nueva-tarea-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.nueva-tarea-form input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 8px; 
+  border: 1px solid #ccc;
+  font-size: 16px; 
+}
+
+/* Mensaje de no tareas */
+.sin-tareas {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  margin-top: 20px;
+}
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .aplicacion-tareas {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .tarea input[type="text"] {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  .nueva-tarea-input {
+    font-size: 14px;
+  }
+}
