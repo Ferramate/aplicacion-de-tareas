@@ -154,7 +154,7 @@ form {
   margin-top: 20px;
 }
 /* Estilos responsivos */
-@media (max-width: 600px) {
+@media (max-width: 678px) {
   .aplicacion-tareas {
     margin: 20px;
     padding: 15px;
